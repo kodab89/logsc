@@ -10,6 +10,7 @@ class LogsChecker:
         hour = hour.strftime("%H%M%S")
         timestamp = f"{day}_{hour}"
         return timestamp
+        
     def failed_list_from_logs(self, path, string_to_catch):
         scripts_that_failed = []
         i = 0
